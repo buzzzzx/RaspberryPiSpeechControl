@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+__author__ = 'buzz'
+__date__ = '2018/7/9 下午5:12'
+
 from VoiceManage import VoiceRecord, Voice2Text, VoiceRecogitive, Text2Voice
 from Nodes import LedControl, FanControl
 from Sensors import TemperatureHumidity, Gas

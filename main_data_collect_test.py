@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+__author__ = 'buzz'
+__date__ = '2018/7/9 下午5:12'
+
 from Sensors import TemperatureHumidity, Gas
 
 import RPi.GPIO as GPIO

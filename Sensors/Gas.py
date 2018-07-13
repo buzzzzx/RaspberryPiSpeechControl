@@ -18,16 +18,16 @@ import time
 
 
 def action(pin):
-    print("Sensor detected action!")
     global gas_detected
     gas_detected = 1
+    print("Sensor detected action!")
 
 
 def getdata():
     CHANNEL = 12
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(CHANNEL, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-
+    global gas_detected
     gas_detected = 0
     GPIO.add_event_detect(CHANNEL, GPIO.RISING)
     GPIO.add_event_callback(CHANNEL, action)
